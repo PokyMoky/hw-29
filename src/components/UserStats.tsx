@@ -12,7 +12,7 @@ const UserStats = () => {
             </p>
             <div className={'stats'}>
                 <div onPointerDown={changeStats} onContextMenu={(e) => e.preventDefault()}>Followers: {stats.followers}</div>
-                <div>Subscribers: {stats.subscribers}</div>
+                <div onPointerDown={changeStats} onContextMenu={(e) => e.preventDefault()}>Subscribers: {stats.subscribers}</div>
             </div>
         </div>
     );
